@@ -2,7 +2,7 @@ import React from 'react'
 
 const Answer = () => {
   return (
-    <div className='bg-green-300 w-full text-center py-1 rounded-md mb-4'>Answer</div>
+    <div className='bg-[#fff] w-full text-center py-1 rounded-md mb-4 border-[1px] cursor-pointer hover:bg-[#efefef]'>Answer</div>
   )
 }
 

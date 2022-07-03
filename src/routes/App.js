@@ -12,7 +12,7 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <BrowserRouter>
-        <div className="font-mono bg-[#d2d8b2] max-w-screen-2xl">
+        <div className="font-mono bg-bgTheme max-w-screen-2xl">
           <Navbar />
           <Routes>
             <Route exact path="/" element={<Home />} />

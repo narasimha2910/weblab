@@ -37,12 +37,12 @@ const Join = () => {
         <input
           type="text"
           placeholder="Enter Your Name"
-          className="mb-5 rounded-md p-2 text-[#376c53] hover:bg-[#fcc884] caret-[#376c53] focus:outline-[#376c53] bg-[#FFDCAE] text-center"
+          className="mb-5 rounded-md p-2 border-[#000] bg-[#fff] text-center border-2"
         />
       </div>
       <div>
         <button
-          className="bg-[#FFDCAE] hover:bg-[#fcc884] text-xl rounded-full text-[#376c53] border-[#376c53] border-2 px-16 py-3 flex items-center"
+          className="bg-logoTheme hover:bg-bgTheme py-5 px-16 text-xl rounded-full border-[#000000] border-2 flex items-center"
           onClick={() => {
             navigate(`/game/${params.gameId}`);
           }}
