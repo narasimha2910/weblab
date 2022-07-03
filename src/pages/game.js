@@ -1,15 +1,17 @@
 import React from "react";
+import GamePanel from "../components/gamePanel";
+import PlayersPanel from "../components/playersPanel";
 
 const Game = () => {
   return (
-    <div className="flex py-36 flex-col justify-around w-screen h-screen items-center  text-[#376c53] ">
-      Game
+    <div className="flex flex-col lg:flex-row pt-20 lg:py-36 w-screen h-screen items-center  text-[#376c53] ">
+      <PlayersPanel />
+      <GamePanel />
     </div>
   );
 };
 
 export default Game;
-
 
 // Players Panel
 // Results Panel

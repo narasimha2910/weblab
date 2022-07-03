@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="flex py-36 flex-col justify-around w-screen h-screen items-center  text-[#376c53] ">
       <div className="mt-10 h-1/3">
-        <button className="bg-[#FFDCAE] p-5 text-xl rounded-full hover:border-[#376c53] hover:border-2">
+        <button className="bg-[#FFDCAE] hover:bg-[#fcc884] p-5 text-xl rounded-full border-[#376c53] border-2">
           Create Server
         </button>
       </div>
@@ -17,16 +17,16 @@ const Home = () => {
         <input
           type="text"
           placeholder="Enter Phrase"
-          className="mb-5 rounded-md p-2 focus:outline-[#376c53] caret-transparent bg-[#FFDCAE] text-center"
+          className="mb-5 rounded-md p-2 hover:bg-[#fcc884] caret-[#376c53] focus:outline-[#376c53] bg-[#FFDCAE] text-center"
           onChange={(e) => {
             setGameId(e.target.value);
           }}
         />
         <div className="h-1/2">
           <button
-            className="bg-[#FFDCAE] p-5 text-xl rounded-full  hover:border-[#376c53] hover:border-2"
+            className="bg-[#FFDCAE] hover:bg-[#fcc884] p-5 text-xl rounded-full border-[#376c53] border-2"
             onClick={() => {
-              navigate(`/game/${gameId}`);
+              navigate(`/join/${gameId}`);
             }}
           >
             Join Server{" "}

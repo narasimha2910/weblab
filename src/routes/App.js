@@ -6,16 +6,18 @@ import Loader from "../components/loader";
 
 const Home = lazy(() => import("../pages/home"));
 const Game = lazy(() => import("../pages/game"));
+const Join = lazy(() => import("../pages/join"));
 
 function App() {
   return (
     <Suspense fallback={<Loader />}>
       <BrowserRouter>
-        <div className="font-mono bg-[#CED89E]">
+        <div className="font-mono bg-[#d2d8b2] max-w-screen-2xl">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route path="/game/:gameId" element={<Game />} />
+            <Route path="/join/:gameId" element={<Join />} />
           </Routes>
         </div>
       </BrowserRouter>
