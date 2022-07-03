@@ -1,12 +1,13 @@
 import React from 'react'
 import { Circles } from "react-loader-spinner";
 
-<Circles height="100" width="100" color="grey" ariaLabel="loading" />;
 
 const Loader = () => {
   return (
-    <div>Loader</div>
-  )
+    <div className='flex justify-center items-center w-screen h-screen'>
+      <Circles height="100" width="100" color="#b04ff2" ariaLabel="loading" />
+    </div>
+  );
 }
 
 export default Loader
